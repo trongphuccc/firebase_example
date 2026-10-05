@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nhãn dạng viên thuốc màu đỏ (như nhãn chuyên mục trên site) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  android:shape="rectangle">
+  <solid android:color="@color/accent_fill" />
+  <corners android:radius="999dp" />
+</shape>

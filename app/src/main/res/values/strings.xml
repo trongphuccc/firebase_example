@@ -1,3 +1,56 @@
 <resources>
   <string name="app_name">FireBase_Example</string>
+
+  <!-- Màn hình nhập bài viết -->
+  <string name="form_title">Nhập bài viết</string>
+  <string name="form_subtitle">Lưu vào Cloud Firestore</string>
+  <string name="plate_caption_title">Thẻ số bài viết</string>
+  <string name="plate_caption_body">Số do bạn đặt, dùng để xếp thứ tự trong danh sách.</string>
+  <string name="tag_placeholder">#???</string>
+  <string name="article_tag">#%1$03d</string>
+  <string name="plate_description">Bài viết số %1$d</string>
+  <string name="plate_description_empty">Chưa có số bài viết</string>
+  <string name="label_article_id">Số bài viết</string>
+  <string name="helper_article_id">Số nguyên dương, ví dụ 12</string>
+  <string name="label_article_title">Tiêu đề</string>
+  <string name="label_article_image">URL ảnh</string>
+  <string name="helper_article_image">Không bắt buộc. Bắt đầu bằng https://</string>
+  <string name="label_article_author">Tác giả</string>
+  <string name="label_article_description">Nội dung</string>
+  <string name="add_article">Lưu bài viết</string>
+  <string name="saving">Đang lưu…</string>
+  <string name="show_articles">Xem danh sách</string>
+  <string name="snackbar_view">Xem</string>
+
+  <!-- Thông báo: ngắn gọn, không lộ document ID; chi tiết kỹ thuật chỉ ghi vào Logcat -->
+  <string name="save_success">Đã lưu bài viết số %1$d.</string>
+  <string name="save_failed">Chưa lưu được bài viết. Vui lòng thử lại.</string>
+  <string name="error_permission">Firestore đang chặn quyền truy cập. Hãy kiểm tra Rules của database.</string>
+  <string name="error_network">Không kết nối được máy chủ. Kiểm tra mạng rồi thử lại.</string>
+  <string name="error_article_id">Nhập số nguyên dương, ví dụ 12</string>
+  <string name="error_title_required">Nhập tiêu đề bài viết</string>
+  <string name="error_description_required">Nhập nội dung bài viết</string>
+  <string name="error_author_required">Nhập tên tác giả</string>
+  <string name="error_image_url">Đường dẫn phải bắt đầu bằng http:// hoặc https://</string>
+
+  <!-- Màn hình danh sách -->
+  <string name="article_list_title">Danh sách bài viết</string>
+  <string name="article_count">%1$d bài viết</string>
+  <string name="article_count_offline">%1$d bài viết · đang ngoại tuyến</string>
+  <string name="navigate_back">Quay lại</string>
+  <string name="loading">Đang tải bài viết…</string>
+  <string name="empty_title">Chưa có bài viết nào</string>
+  <string name="empty_message">Bài viết bạn lưu sẽ hiện ở đây, xếp theo số bài viết.</string>
+  <string name="empty_action">Thêm bài viết</string>
+  <string name="offline_title">Chưa kết nối được máy chủ</string>
+  <string name="offline_message">Danh sách sẽ tự hiện khi có mạng.</string>
+  <string name="load_error_title">Không tải được bài viết</string>
+  <string name="load_failed">Đã có lỗi khi đọc dữ liệu. Vui lòng thử lại sau.</string>
+  <string name="detail_title">Chi tiết bài viết</string>
+  <string name="unknown_author">Chưa rõ tác giả</string>
+  <string name="views_count_long">%1$s lượt xem</string>
+  <string name="author_description">Tác giả: %1$s</string>
+  <string name="views_description">%1$s lượt xem</string>
+  <string name="article_deleted">Bài viết này đã bị xóa.</string>
+  <string name="article_image_description">Ảnh của bài viết %1$s</string>
 </resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Một bài viết trong danh sách (giống card trên site GameNexus):
+     ảnh 16:9 phủ kín khung, nhãn số, tiêu đề, 2 dòng đầu nội dung, tác giả | lượt xem. Bấm để xem chi tiết -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  style="@style/Widget.App.Card"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginStart="16dp"
+  android:layout_marginTop="8dp"
+  android:layout_marginEnd="16dp"
+  android:layout_marginBottom="8dp"
+  android:clickable="true"
+  android:focusable="true">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Khung ảnh luôn đúng tỉ lệ 16:9; Picasso fit + centerCrop phủ kín khung -->
+    <ImageView
+      android:id="@+id/img_article"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@color/bg_raised"
+      android:scaleType="centerInside"
+      app:layout_constraintDimensionRatio="16:9"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="ContentDescription" />
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/img_article">
+
+      <TextView
+        android:id="@+id/txt_article_id"
+        style="@style/Widget.App.Chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="#012" />
+
+      <TextView
+        android:id="@+id/txt_article_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.App.Heading"
+        tools:text="Pragmata - Game hành động Sci-Fi mới nhất của Capcom" />
+
+      <TextView
+        android:id="@+id/txt_article_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="@color/text_muted"
+        tools:text="Pragmata là một tác phẩm game hành động thế giới mở độc đáo từ Capcom." />
+
+      <!-- Tác giả | lượt xem -->
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+          android:id="@+id/txt_article_author"
+          style="@style/Widget.App.Meta"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          app:drawableStartCompat="@drawable/ic_person"
+          tools:text="Admin GNews" />
+
+        <View
+          android:layout_width="1dp"
+          android:layout_height="12dp"
+          android:layout_marginStart="12dp"
+          android:layout_marginEnd="12dp"
+          android:background="@color/border" />
+
+        <TextView
+          android:id="@+id/txt_article_views"
+          style="@style/Widget.App.Meta"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:drawableStartCompat="@drawable/ic_visibility"
+          tools:text="52" />
+      </LinearLayout>
+    </LinearLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Bảng màu lấy theo site GameNexus (CSS variables của site). App luôn ở giao diện tối. -->
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
+
+  <!-- Nền -->
+  <color name="bg_nav">#0A0B0D</color>          <!-- CSS bg-nav: thanh tiêu đề -->
+  <color name="bg_dark">#0D0E11</color>         <!-- CSS bg-dark: nền màn hình -->
+  <color name="bg_card">#161820</color>         <!-- CSS bg-card: card, ô nhập -->
+  <color name="bg_raised">#1F2230</color>       <!-- khung ảnh khi chưa có ảnh -->
+  <color name="border">#14FFFFFF</color>        <!-- CSS border: viền card, đường kẻ -->
+  <color name="field_outline">#6E7385</color>   <!-- viền ô nhập (tương phản 3:1 với nền) -->
+
+  <!-- Chữ -->
+  <color name="text_primary">#EAEAEA</color>   <!-- CSS text-primary -->
+  <color name="text_muted">#A1A6B3</color>     <!-- CSS text-muted -->
+
+  <!-- Đỏ nhấn -->
+  <color name="accent">#E63946</color>          <!-- CSS accent: viền đang chọn, tiến trình, vạch nhấn -->
+  <!-- Nền đỏ có chữ trắng: tối hơn CSS accent một chút để chữ trắng đạt 4.97:1 (#E63946 chỉ đạt 4.17:1) -->
+  <color name="accent_fill">#D62839</color>
+  <color name="accent_pressed">#C1121F</color>  <!-- CSS accent-hover -->
+  <color name="accent_container">#7F1D1D</color> <!-- CSS accent-900 -->
+  <color name="on_accent_container">#FEE2E2</color> <!-- CSS accent-50 -->
+
+  <color name="error">#EF4444</color>           <!-- CSS error -->
+  <color name="warning">#F59E0B</color>         <!-- CSS warning -->
 </resources>

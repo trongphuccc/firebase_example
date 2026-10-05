@@ -19,6 +19,9 @@
       android:name=".ShowDataActivity"
       android:exported="false" />
     <activity
+      android:name=".ArticleDetailActivity"
+      android:exported="false" />
+    <activity
       android:name=".MainActivity"
       android:exported="true">
       <intent-filter>
@@ -27,6 +30,11 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+
+    <!-- Nạp sẵn font Chakra Petch (Google Fonts) khi mở app -->
+    <meta-data
+      android:name="preloaded_fonts"
+      android:resource="@array/preloaded_fonts" />
   </application>
 
 </manifest>

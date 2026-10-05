@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bài viết không có URL ảnh: biểu tượng ảnh bị gạch chéo (khác hình với đang tải / lỗi) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="48dp"
+  android:height="48dp"
+  android:viewportWidth="24"
+  android:viewportHeight="24">
+  <path
+    android:fillAlpha="0.55"
+    android:fillColor="?attr/colorOnSurfaceVariant"
+    android:pathData="M21,19V5c0,-1.1 -0.9,-2 -2,-2H5c-1.1,0 -2,0.9 -2,2v14c0,1.1 0.9,2 2,2h14c1.1,0 2,-0.9 2,-2zM8.5,13.5l2.5,3.01L14.5,12l4.5,6H5l3.5,-4.5z" />
+  <path
+    android:pathData="M3,3L21,21"
+    android:strokeWidth="2"
+    android:strokeColor="?attr/colorOnSurfaceVariant"
+    android:strokeLineCap="round" />
+</vector>

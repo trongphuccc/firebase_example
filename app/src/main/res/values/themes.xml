@@ -1,9 +1,163 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.FireBase_Example" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+  <!-- Theme theo site GameNexus: nền tối, đỏ nhấn, Exo 2 cho tiêu đề, Roboto cho nội dung -->
+  <style name="Base.Theme.FireBase_Example" parent="Theme.Material3.Dark.NoActionBar">
+    <item name="colorPrimary">@color/accent_fill</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <item name="colorPrimaryContainer">@color/accent_container</item>
+    <item name="colorOnPrimaryContainer">@color/on_accent_container</item>
+    <item name="colorSecondary">@color/text_primary</item>
+    <item name="colorOnSecondary">@color/bg_dark</item>
+    <item name="colorSecondaryContainer">@color/bg_raised</item>
+    <item name="colorOnSecondaryContainer">@color/text_primary</item>
+    <item name="colorTertiary">@color/warning</item>
+    <item name="colorOnTertiary">@color/bg_dark</item>
+    <item name="android:colorBackground">@color/bg_dark</item>
+    <item name="colorSurface">@color/bg_dark</item>
+    <item name="colorOnSurface">@color/text_primary</item>
+    <item name="colorSurfaceVariant">@color/bg_card</item>
+    <item name="colorOnSurfaceVariant">@color/text_muted</item>
+    <item name="colorSurfaceContainerLowest">@color/bg_nav</item>
+    <item name="colorSurfaceContainerLow">@color/bg_card</item>
+    <item name="colorSurfaceContainer">@color/bg_card</item>
+    <item name="colorSurfaceContainerHigh">@color/bg_raised</item>
+    <item name="colorSurfaceContainerHighest">@color/bg_raised</item>
+    <item name="colorOutline">@color/field_outline</item>
+    <item name="colorOutlineVariant">@color/border</item>
+    <item name="colorSurfaceInverse">@color/text_primary</item>
+    <item name="colorOnSurfaceInverse">@color/bg_dark</item>
+    <item name="colorPrimaryInverse">@color/accent_pressed</item>
+    <item name="colorError">@color/error</item>
+    <item name="colorOnError">@color/bg_dark</item>
+  </style>
 
-    <style name="Theme.FireBase_Example" parent="Base.Theme.FireBase_Example" />
+  <style name="Theme.FireBase_Example" parent="Base.Theme.FireBase_Example" />
+
+  <!-- Bo góc như site: radius 12px, radius-lg 16px -->
+  <style name="ShapeAppearance.App.Control" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">12dp</item>
+  </style>
+
+  <style name="ShapeAppearance.App.Card" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">16dp</item>
+  </style>
+
+  <!-- Chữ -->
+  <style name="TextAppearance.App.Toolbar" parent="TextAppearance.Material3.TitleLarge">
+    <item name="fontFamily">@font/exo_2_bold</item>
+    <item name="android:fontFamily">@font/exo_2_bold</item>
+  </style>
+
+  <style name="TextAppearance.App.ToolbarSubtitle" parent="TextAppearance.Material3.BodySmall">
+    <item name="android:textColor">@color/text_muted</item>
+  </style>
+
+  <style name="TextAppearance.App.Heading" parent="TextAppearance.Material3.TitleMedium">
+    <item name="fontFamily">@font/exo_2_bold</item>
+    <item name="android:fontFamily">@font/exo_2_bold</item>
+    <item name="android:textSize">17sp</item>
+    <item name="android:textColor">@color/text_primary</item>
+  </style>
+
+  <style name="TextAppearance.App.DetailTitle" parent="TextAppearance.Material3.HeadlineSmall">
+    <item name="fontFamily">@font/exo_2_black</item>
+    <item name="android:fontFamily">@font/exo_2_black</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:lineSpacingMultiplier">1.1</item>
+    <item name="android:textColor">@color/text_primary</item>
+  </style>
+
+  <style name="TextAppearance.App.Button" parent="TextAppearance.Material3.LabelLarge">
+    <item name="fontFamily">@font/exo_2_bold</item>
+    <item name="android:fontFamily">@font/exo_2_bold</item>
+    <item name="android:textSize">15sp</item>
+    <item name="android:letterSpacing">0.02</item>
+  </style>
+
+  <!-- Nhãn viên thuốc: chữ in hoa đậm như nhãn chuyên mục trên site -->
+  <style name="TextAppearance.App.Chip" parent="">
+    <item name="fontFamily">@font/exo_2_bold</item>
+    <item name="android:fontFamily">@font/exo_2_bold</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:letterSpacing">0.06</item>
+    <item name="android:textColor">@color/white</item>
+  </style>
+
+  <style name="TextAppearance.App.Chip.Large">
+    <item name="fontFamily">@font/exo_2_black</item>
+    <item name="android:fontFamily">@font/exo_2_black</item>
+    <item name="android:textSize">30sp</item>
+    <item name="android:letterSpacing">0.02</item>
+  </style>
+
+  <!-- Hàng thông tin: tác giả, lượt xem -->
+  <style name="TextAppearance.App.Meta" parent="TextAppearance.Material3.BodyMedium">
+    <item name="android:textSize">13sp</item>
+    <item name="android:textColor">@color/text_muted</item>
+  </style>
+
+  <!-- Thành phần -->
+  <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+    <item name="android:background">@color/bg_nav</item>
+    <item name="titleTextAppearance">@style/TextAppearance.App.Toolbar</item>
+    <item name="subtitleTextAppearance">@style/TextAppearance.App.ToolbarSubtitle</item>
+    <item name="titleTextColor">@color/text_primary</item>
+    <item name="navigationIconTint">@color/text_primary</item>
+  </style>
+
+  <style name="Widget.App.Button" parent="Widget.Material3.Button">
+    <item name="shapeAppearance">@style/ShapeAppearance.App.Control</item>
+    <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+    <item name="android:minHeight">52dp</item>
+  </style>
+
+  <style name="Widget.App.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+    <item name="shapeAppearance">@style/ShapeAppearance.App.Control</item>
+    <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+    <item name="android:textColor">@color/text_primary</item>
+    <item name="strokeColor">@color/field_outline</item>
+    <item name="android:minHeight">52dp</item>
+  </style>
+
+  <style name="Widget.App.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+    <item name="shapeAppearance">@style/ShapeAppearance.App.Control</item>
+    <item name="boxBackgroundColor">@color/bg_card</item>
+  </style>
+
+  <style name="Widget.App.Card" parent="Widget.Material3.CardView.Outlined">
+    <item name="cardBackgroundColor">@color/bg_card</item>
+    <item name="strokeColor">@color/border</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.App.Card</item>
+  </style>
+
+  <!-- Nhãn số bài viết "#012" -->
+  <style name="Widget.App.Chip" parent="">
+    <item name="android:background">@drawable/bg_chip</item>
+    <item name="android:textAppearance">@style/TextAppearance.App.Chip</item>
+    <item name="android:paddingStart">12dp</item>
+    <item name="android:paddingEnd">12dp</item>
+    <item name="android:paddingTop">4dp</item>
+    <item name="android:paddingBottom">4dp</item>
+  </style>
+
+  <style name="Widget.App.Chip.Large">
+    <item name="android:textAppearance">@style/TextAppearance.App.Chip.Large</item>
+    <item name="android:paddingStart">22dp</item>
+    <item name="android:paddingEnd">22dp</item>
+    <item name="android:paddingTop">6dp</item>
+    <item name="android:paddingBottom">6dp</item>
+    <item name="android:minWidth">120dp</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <!-- Thông tin tác giả / lượt xem kèm biểu tượng -->
+  <style name="Widget.App.Meta" parent="">
+    <item name="android:textAppearance">@style/TextAppearance.App.Meta</item>
+    <item name="android:drawablePadding">6dp</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:ellipsize">end</item>
+  </style>
 </resources>
